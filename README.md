@@ -1,2 +1,2 @@
 # bazel-debug-vscode
-bazel  debug  configuration  in  vscode
+bazel  debug  configuration  in  vscode(ubuntu)
