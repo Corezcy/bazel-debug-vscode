@@ -1,13 +1,21 @@
+
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "BazelDebug",
-            "preLaunchTask": "Debug",
+             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bazel-out/k8-dbg/bin/sceditor/sceditor",
-            "args": [],
+            "program": "${workspaceFolder}/bazel-bin/logsimcore/FawLogSim",
+            "args": [
+                "--map_dir",
+                "/home/zcy/nanjing_demo_v14",
+                "--loglevel",
+                "1",
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -17,12 +25,9 @@
                 {
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
-                    "ignoreFailures": false
+                    "ignoreFailures": true
                 }
-            ],
-            // "sourceFileMap": {
-            //     "/home/newton/.cache/bazel/_bazel_newton/7a12d285425fc99da0ce87e2a08f2f36/execroot/__main__/": "${workspaceFolder}"
-            // }
-        },
+            ]
+        }
     ]
 }
