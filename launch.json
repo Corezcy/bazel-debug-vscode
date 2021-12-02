@@ -9,14 +9,8 @@
              "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bazel-bin/logsimcore/FawLogSim",
-            "args": [
-                "--map_dir","/home/core/jiulonghu_faw_v16",
-                "--use_sim_time","true", 
-                "--logsim_collision_avoid","true", 
-                "--scenario","/opt/simulation/testdata/log_scenario.json",
-                "--loglevel","0"
-            ],
+            "program": "${workspaceFolder}/bazel-bin/sceditor/sceditor.bin",
+            "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
